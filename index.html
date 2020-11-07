@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title> Home </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="home center"><a href="index.html">SuperHeroWiki</a></div>
+            <div class="favorite right"><a href="favourites.html">Favourites</a></div>
+        </header>
+
+        <main>
+            <div class="search-box center">
+                <input type="text" id="search-hero" placeholder="Search for a Superhero (Minimum 3 characters)">
+            </div>
+
+            <div id="results-div">
+                <div id='heroes-list'>
+
+                    Search for your favourite heroes..
+            
+                </div>
+            </div>
+        </main>
+
+        <!-- Notification -->
+        <div id="alert" style="visibility:hidden" class="success">Success Message</div>
+        <div id="alert" style="visibility:hidden" class="failure">Error Message</div>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
