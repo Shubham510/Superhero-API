@@ -51,27 +51,27 @@ function renderDetails(data){
 function addPowerStats(data){
     var combat = document.getElementById('combat');
     combat.innerHTML= data.combat;
-    combat.style = `widht: ${data.combat}%;`;
+    combat.style = `width: ${data.combat}%;`;
 
     var combat = document.getElementById('durability');
     combat.innerHTML= data.durability;
-    combat.style = `widht: ${data.durability}%;`;
+    combat.style = `width: ${data.durability}%;`;
 
     var combat = document.getElementById('intelligence');
     combat.innerHTML= data.intelligence;
-    combat.style = `widht: ${data.intelligence}%;`;
+    combat.style = `width: ${data.intelligence}%;`;
 
     var combat = document.getElementById('power');
     combat.innerHTML= data.power;
-    combat.style = `widht: ${data.power}%;`;
+    combat.style = `width: ${data.power}%;`;
 
     var combat = document.getElementById('speed');
     combat.innerHTML= data.speed;
-    combat.style = `widht: ${data.speed}%;`;
+    combat.style = `width: ${data.speed}%;`;
 
     var combat = document.getElementById('strength');
     combat.innerHTML= data.strength;
-    combat.style = `widht: ${data.strength}%;`;
+    combat.style = `width: ${data.strength}%;`;
 }
 
 function convertToParas(data){

@@ -46,7 +46,7 @@ function renderResults(searchResult){
     //check for error or no result
     result=searchResult;
     console.log(searchResult.results);
-    if(searchResult.results.length===0 || searchResult.response=='error'){
+    if(searchResult.response=='error' || searchResult.results.length === 0){
         resultsDiv.innerHTML = searchResult.error;
     }
     else{
