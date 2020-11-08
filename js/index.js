@@ -4,7 +4,6 @@ const whiteHeart = 'images/white-heart.jpg';
 const redHeart = 'images/red-heart.jpg';
 const resultsDiv = document.getElementById('results');
 var timeout;
-var result;
 
 // check local storage for existing object and initialize one if not present.
 function checkLocalStorage(){
