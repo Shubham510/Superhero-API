@@ -36,3 +36,10 @@ input{
     margin-top: 20px;
     font-size: 24px;
 }
+
+.bar{
+    background-color: crimson;
+    border-radius: 10px;
+    transition-duration: 1000ms;
+    padding: 10px;
+}

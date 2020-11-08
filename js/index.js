@@ -85,7 +85,8 @@ function handleClickListener(e){
         changeFavStatus(e.target.parentNode.id);
     }
     else if(e.target.className === 'hero-img' || e.target.className === 'hero-name'){
-        console.log(e);
+        var id = e.target.parentNode.id;
+        window.open('./details.html'+'?id='+id, "_self");
     }
 }
 

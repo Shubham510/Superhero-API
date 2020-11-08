@@ -8,15 +8,75 @@
     <body>
         <header>
             <div id="home center"><a href="index.html">SuperHeroWiki</a></div>
+            <div class="favorite right"><a href="favourites.html">Favourites</a></div>
         </header>
 
         <main>
-            <div id="results-div">
-                <div id='heroes-list'>
+            <div id="hero-details" data-id="69">
 
-                    Look for your favourite heroes <a href="index.html">here</a> and add them to favourites so that the appear here.
-            
+                <div id="name">Batman</div>
+                <div id="details-container">
+                    <div id="img-fav">
+                        <div id="image"><img src="batman's image"></div>
+                        <div id="fav"><img id="fav-icon" src="images/white-heart.jpg" width="25"></div>
+                    </div>
+                    <div class="powerstats">
+                        <!-- Powerstats bars -->
+                        <div id="stats-container">
+                            <div id="stat-names">
+                                <span>Combat</span>
+                                <span>Durability</span>
+                                <span>Intelligence</span>
+                                <span>Power</span>
+                                <span>Speed</span>
+                                <span>Strength</span>
+                            </div>
+
+                            <div id="stat-bars">
+                                <div class="bar-container">
+                                    <div class="bar" id="combat" style="width: 0%;">.</div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="durability" style="width: 0%;">.</div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="intelligence" style="width: 0%;">.</div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="power" style="width: 0%;">.</div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="speed" style="width: 0%;">.</div>
+                                </div>
+                                <div class="bar-container">
+                                    <div class="bar" id="strength" style="width: 0%;">.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div id="details-container">
+                    <div id="appearance-container">
+                        <h1>Appearance</h1>
+                        <div id="appearance">Details</div>
+                    </div>
+                    <div id="biography-container">
+                        <h1>Biography</h1>
+                        <div id="biography">Details</div>
+                    </div>
+                </div>
+                <div id="details-container">
+                    <div id="occupation-container">
+                        <h1>Occupation</h1>
+                        <div id="occupation">Details</div>
+                    </div>
+                    <div id="connections-container">
+                        <h1>Connections</h1>
+                        <div id="connections">Details</div>
+                    </div>
+                </div>
+            
             </div>
         </main>
 
@@ -24,6 +84,6 @@
         <div id="alert" style="visibility:hidden" class="success">Success Message</div>
         <div id="alert" style="visibility:hidden" class="failure">Error Message</div>
 
-        <script type="text/javascript" src="js/favourites.js"></script>
+        <script type="text/javascript" src="js/details.js"></script>
     </body>
 </html>
