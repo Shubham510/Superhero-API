@@ -70,14 +70,25 @@ function changeFavStatus(id){
         favHeroes = favHeroes.filter(hero => hero!=id);
         favStatus = false;
         document.getElementById(id).remove();
+        notify('failure', 'Superhero removed from favourites');
     }
     else{
         favHeroes.push(id);
         favStatus = true;
+        notify('success','Superhero added to favourites');
     }
     localStorage.setItem('favouriteHeroes',JSON.stringify(favHeroes));
     heroCard.lastElementChild.lastElementChild.src = favStatus ? redHeart : whiteHeart;
     
+}
+
+function notify(type, message){
+    var element = document.getElementsByClassName(type);
+    element[0].innerHTML = message;
+    element[0].style.visibility = "visible"
+    setTimeout(() => {
+        element[0].style.visibility = "hidden";
+    }, 1500);
 }
 
 function initializeSuperheroApp(){

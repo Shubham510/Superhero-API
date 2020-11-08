@@ -214,3 +214,26 @@ input{
     float: right;
 }
 
+#alert{
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    z-index: 99;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+    float: right;
+    right: 50px;
+    transition-duration: 600ms;
+}
+
+.success{
+    color: black;
+    background-color: green;
+}
+
+.failure{
+    color: black;
+    background-color: red;
+}
+

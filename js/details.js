@@ -30,6 +30,7 @@ async function searchHero(id){
 }
 
 function renderDetails(data){
+    document.title = "Details | " + data.name;
     document.getElementById('name').innerHTML = `<h1>${data.name}</h1>`;
     document.getElementById('hero-details').dataset.id = data.id;
     document.getElementById('image').firstElementChild.src = data.image.url;
@@ -96,14 +97,25 @@ function changeFavStatus(id){
     if(favHeroes.indexOf(id) !== -1){
         favHeroes = favHeroes.filter(hero => hero!=id);
         favStatus = false;
+        notify('failure', 'Superhero removed from favourites');
     }
     else{
         favHeroes.push(id);
         favStatus = true;
+        notify('success','Superhero added to favourites');
     }
     localStorage.setItem('favouriteHeroes',JSON.stringify(favHeroes));
     favIcon.src = favStatus ? redHeart : whiteHeart;
     
+}
+
+function notify(type, message){
+    var element = document.getElementsByClassName(type);
+    element[0].innerHTML = message;
+    element[0].style.visibility = "visible"
+    setTimeout(() => {
+        element[0].style.visibility = "hidden";
+    }, 1500);
 }
 
 function initializeSuperheroApp(){
